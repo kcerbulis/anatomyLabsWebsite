@@ -1,18 +1,37 @@
-/*--------------- Navigation bar styling-------------------*/
 
+body{
+  /* background-color: #ffffff; */
+}
+
+/* Removes unwanted text decoration from links */
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+
+/*////////////////////////////////////////////////////////////*/
+/*-------------------Navigation bar styling-------------------*/
+/*////////////////////////////////////////////////////////////*/
+
+/* Grid dimensions */
 .navigationBarContainer{
   display: grid;
-  grid-template-columns: 10% 1fr 20% 1fr 10% 1fr 10% 1fr 10%;
-  grid-template-rows: 10% 25% 30% 25% 10%;
+  grid-template-columns: 10px 75px 1fr 100px 30px 100px 30px 100px 3%;
+  grid-template-rows: 10% 25% auto 25% 10%;
   background-color: rebeccapurple;
   height: 100px;
 }
 
-
 .navigationLogo{
   grid-column: 2 / span 1;
   grid-row: 2 / span 3;
-  background-color: burlywood;
+}
+
+.navigationLogoImg{
+  height: 75px;
+  width: 75px;
 }
 
 .productBtn{
@@ -31,4 +50,25 @@
   grid-column: 8 / span 1;
   grid-row: 3 / span 1;
   background-color: deepskyblue;
+}
+
+
+
+/* Button dimensions and spacing (responsive) */
+.productBtn, .whoAreWeBtn, .contactBtn{
+  border-radius: 3px;
+}
+
+.btnTxtContainer{
+  width: 80%;
+  margin-right: -10px;
+  max-height: 30px;
+  min-width: 100px;
+}
+
+.btnTxt{
+  width: max-content;
+  line-height: 26px;
+  max-height: 30px;
+  min-width: 100px;
 }
