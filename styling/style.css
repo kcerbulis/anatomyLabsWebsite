@@ -2,8 +2,8 @@
 
 .navigationBarContainer{
   display: grid;
-  grid-template-columns: 10% 1fr 20% 1fr 10% 1fr 10% 1fr 10%;
-  grid-template-rows: 10% 25% 30% 25% 10%;
+  grid-template-columns: 10px auto 60% 1fr 5% 1fr 5% 1fr 25px;
+  grid-template-rows: 10% 25% auto 25% 10%;
   background-color: rebeccapurple;
   height: 100px;
 }
@@ -12,7 +12,12 @@
 .navigationLogo{
   grid-column: 2 / span 1;
   grid-row: 2 / span 3;
-  background-color: burlywood;
+  /* background-color: burlywood; */
+}
+
+.navigationLogoImg{
+  height: 75px;
+  width: 75px;
 }
 
 .productBtn{
@@ -31,4 +36,8 @@
   grid-column: 8 / span 1;
   grid-row: 3 / span 1;
   background-color: deepskyblue;
+}
+
+.btnTxt{
+  line-height: 26px;
 }
