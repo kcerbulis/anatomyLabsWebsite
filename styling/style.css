@@ -1,5 +1,6 @@
 body{
   height: 100vh;
+  /* overflow-x: hidden; */
 }
 
 /* Removes unwanted text decoration from links */
@@ -93,19 +94,36 @@ a:hover, a:visited, a:link, a:active {
   padding-top: 110px;
   background-color: hotpink;
 
-  grid-template-columns: 15% 40% 20% auto 15%;
-  grid-template-rows: 12% 1fr 30% 1fr 12%;
+  grid-template-columns: 5% auto 20% auto 150px;
+  grid-template-rows: 12% 100px 300px 100px 12%;
+}
+
+.logoWithNameImgContainer{
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  /* background-color: aquamarine; */
 }
 
 .logoWithNameImg{
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-  background-color: aquamarine;
+  width: 70vh;
+  height: 30vh;
+  max-width: 100%;
+  min-width: 100%;
 }
 
-.headAnatomyImg{
+.headAnatomyImgContainer{
   grid-column: 4 / span 1;
   grid-row: 2 / span 3;
+  /* background-color: olive; */
+}
+
+.headNervesImg{
+
+
+  width: 70vh;
+  height: 70vh;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 
